@@ -13,7 +13,7 @@ The entire project is installed in the NGINX working directory `/usr/share/nginx
 ## Running the Webslides Container
 If you are interested just in kicking the webslides tires run the following command:
 
-`docker run --name webslides -d -p 8080:80 webslides`
+`docker run --name webslides -d -p 8080:80 vegasbrianc/webslides`
 
 Once the container is running navigate to [http://0.0.0.0:8080](http://0.0.0.0:8080) This will take you to the webslides demo. Press the down arrow key to navigate through the slides.
 
@@ -22,6 +22,6 @@ If you want to use Webslides for a presentation then clone the project to you Do
 
 Attach the local slides to the container.
 
-`docker run --name webslides -d -p 8080:80 -v webslides:/usr/share/nginx/html webslides`
+`docker run --name webslides -d -p 8080:80 -v webslides:/usr/share/nginx/html vegasbrianc/webslides`
 
 Now you will be able to edit the slides locally.
